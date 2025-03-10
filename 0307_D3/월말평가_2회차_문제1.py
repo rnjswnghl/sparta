@@ -15,23 +15,35 @@
 # 다음 줄 빈칸으로 구분된 N명의 초기 상태, 
 # 이후M 줄에 걸쳐 a b c
 
+# 테스트 케이스 개수 입력
 T = int(input())
 
-for tc in range(1, T+1):
-    N, M = map(int, input().split())  # N: 팀원 수, M: 명령 수
-    origin = list(map(int, input().split()))  # 팀원들의 초기 상태
+# 테스트 케이스 반복
+for tc in range(1, T + 1):
+    # N: 팀원 수, M: 명령 수
+    N, M = map(int, input().split())
+    # 팀원들의 초기 상태
+    origin = list(map(int, input().split()))
 
+    # 지시 횟수 반복
     for _ in range(M):
-        a, b, c = map(int, input().split())  # a: 난이도, b: 기준 번호, c: 비교 범위
-        b -= 1  # b는 1-based index로 주어지므로 0-based index로 변경
+        # a: 난이도, b: 기준 번호, c: 비교 범위
+        a, b, c = map(int, input().split())
+        # b는 1부터 시작하니 인덱스 맞추기 위해 -1
+        b -= 1
 
-        # 비교할 범위가 올바른지 확인
-        for i in range(max(0, b - c), min(N, b + c + 1)):  # 범위 내에서 비교
-            if i != b and i - 1 >= 0 and i + 1 < N:  # i-1, i+1이 배열 범위 내에 있을 때만 비교
-                if origin[i-1] == origin[i+1]:
-                    origin[i-1] = 1 - origin[i+1]
-                    origin[i+1] = 1 - origin[i-1]
-    
+        # 뒤집어야할 범위 내에서 반복
+        for j in range(1, c + 1):
+            # 비교할 범위가 올바른지 확인   
+            if 0 > b - j or b + j >= N:
+                # 올바르지 않으면 멈춤
+                break
+
+            else:
+                # 비교할 왼쪽과 오른쪽이 같은 상태이면 뒤집기
+                if origin[b - j] == origin[b + j]:
+                    origin[b - j] = 1 - origin[b - j]
+                    origin[b + j] = 1 - origin[b + j]
+
+    # 출력
     print(f'#{tc}', *origin)
-
-                    
