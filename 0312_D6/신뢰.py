@@ -51,11 +51,19 @@ def min_time(commands):
     return total_time
 
 
-# 테스트 케이스 개수
+# 테스트 케이스 개수 입력
 T = int(input())
+# 테스트 케이스 반복
 for t in range(1, T + 1):
+    # N과 지시 사항 입력 받기
     data = input().split()
+    # data 첫 요소는 명령 횟수 N  
     N = int(data[0])
+    # 명령은 1에서 지시횟수의 2배까지의 범위.(0번은 N)
+    # 블루와 오렌지 각각 명령을 번갈아서 받으니 2씩 간격으로 설정
+    # i번 요소와 i+1번 요소는 세트!
+    # 범위 안에서 i는 B 또는 O를 가리키며, i+1은 버튼의 위치를 나타냄
+
     commands = [(data[i], data[i + 1]) for i in range(1, 2 * N, 2)]
     result = min_time(commands)
     print(f"#{t} {result}")
