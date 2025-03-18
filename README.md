@@ -1,4 +1,4 @@
-# sparta
+# sparta :dart:
 *ssafy_sparta_club_solve*
 
 ----------
