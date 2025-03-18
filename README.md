@@ -1,6 +1,6 @@
 # sparta :dart:
 *ssafy_sparta_club_solve*
-
+:fire::fire::fire:
 ----------
 ## :pushpin: *`From_SWEA`*
 
@@ -53,7 +53,7 @@
 > `1860. 진기의 최고급 붕어빵`
 
 ----------
-:pushpin: ## *`From_BAEKJOON`*
+## :pushpin: *`From_BAEKJOON`*
 
 #### 2025.03.17
 > `8393. 합`
