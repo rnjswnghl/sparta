@@ -1,11 +1,11 @@
 # sparta
-ssafy_sparta_club_solve
+*ssafy_sparta_club_solve*
 ----------
-## `From_SWEA`
+## *`From_SWEA`*
 
 ### 2025.03.05
-`2072. 홀수만 더하기`
-`2071. 평균값 구하기`
+> `2072. 홀수만 더하기`
+> `2071. 평균값 구하기`
 
 `1983. 조교의 성적 매기기`
 `1959. 두 개의 숫자열`
@@ -52,7 +52,7 @@ ssafy_sparta_club_solve
 `1860. 진기의 최고급 붕어빵`
 
 ----------
-## `From_BAEKJOON`
+## *`From_BAEKJOON`*
 
 ### 2025.03.17
 `8393. 합`
