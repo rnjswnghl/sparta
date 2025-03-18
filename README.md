@@ -2,7 +2,7 @@
 *ssafy_sparta_club_solve*
 
 ----------
-## *`From_SWEA`*
+:pushpin: ## *`From_SWEA`*
 
 #### 2025.03.05
 > `2072. 홀수만 더하기`
@@ -53,7 +53,7 @@
 > `1860. 진기의 최고급 붕어빵`
 
 ----------
-## *`From_BAEKJOON`*
+:pushpin: ## *`From_BAEKJOON`*
 
 #### 2025.03.17
 > `8393. 합`
